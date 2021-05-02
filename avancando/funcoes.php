@@ -25,3 +25,8 @@ function depositar (array $conta, float $valorADepositar): array { // da para se
 function titularComLetrasMaiuscula (array &$conta) { // & informa que estamos pegando a referência do array e não o valor
   return $conta['titular'] = mb_strtoupper($conta['titular']);
 }
+
+function exibeConta(array $conta) {
+  ['titular' => $titular, 'saldo' => $saldo] = $conta;
+  echo "<li>Titular: $titular. Saldo: $saldo</li>";
+}
