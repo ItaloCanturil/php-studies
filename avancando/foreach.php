@@ -15,6 +15,6 @@ $contasCorrentes = [
   ]
 ];
 
-foreach ($contasCorrentes as $cpg => $conta) {
+foreach ($contasCorrentes as $cpf => $conta) {
   echo $conta['titular'] . PHP_EOL; 
 }
