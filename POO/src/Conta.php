@@ -2,7 +2,7 @@
 
 class Conta
 {
-  private $titular;
+  private Titular $titular;
   private float $saldo;
   public static $numeroDeContas = 0;
 
